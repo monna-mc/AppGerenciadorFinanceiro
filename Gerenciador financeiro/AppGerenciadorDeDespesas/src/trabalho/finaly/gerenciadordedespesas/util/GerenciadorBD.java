@@ -28,16 +28,14 @@ public class GerenciadorBD extends SQLiteOpenHelper{
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		
-		
+		try 
+		{
 		db.execSQL("CREATE TABLE despesa ( _id INTEGER PRIMARY KEY AUTOINCREMENT," +
 				" descricao TEXT, valor REAL, data TEXT, status TEXT);");
 		
 		db.execSQL("CREATE TABLE caixa ( _id INTEGER PRIMARY KEY AUTOINCREMENT," +
 				" saldo REAL, receita REAL, data TEXT);");
 		
-		try 
-		{
-			db.setTransactionSuccessful();
 		} 
 		catch (SQLException e) 
 		{
