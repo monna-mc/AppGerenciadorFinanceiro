@@ -135,7 +135,7 @@ public class Add_Despesa extends Activity {
 
 		for (int i = 0; i < cursor.getCount(); i++) {
 			cursor.moveToPosition(i);
-			ImprimirLinha(cursor.getDescricao(), cursor.getValor(),cursor.getStatus(), cursor.getData());
+			ImprimirLinha(cursor.getDescricao(), cursor.getValor(), cursor.getData(), cursor.getStatus());
 		}
 	}
 
@@ -146,8 +146,7 @@ public class Add_Despesa extends Activity {
 			tv.setText("");
 
 		tv.setText(tv.getText() + "\r\n" + "Descricao: " + descricao + "\n "
-				+ "Valor: " + valor + "\n" + "Status: " + status + "\n"
-				+ "Data: " + mDateDisplay);
+				+ "Valor: " + valor + "\n" + "Data: " + mDateDisplay + "\n" + "Status: " + status);
 	}
 
 	@Override
