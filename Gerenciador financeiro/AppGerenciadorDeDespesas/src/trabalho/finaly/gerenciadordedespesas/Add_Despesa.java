@@ -37,14 +37,13 @@ public class Add_Despesa extends Activity {
 
 	EditText descricao = null;
 	EditText valor = null;
-	EditText data = null;
+	//EditText data = null;
 	RadioGroup status = null;
 	GerenciadorBD gerenciador;
 
 	private DatePickerDialog.OnDateSetListener mDateSetListener = new DatePickerDialog.OnDateSetListener() {
 
-		public void onDateSet(DatePicker view, int year, int monthOfYear,
-				int dayOfMonth) {
+		public void onDateSet(DatePicker view, int year, int monthOfYear,int dayOfMonth) {
 			mYear = year;
 			mMonth = monthOfYear;
 			mDay = dayOfMonth;
@@ -97,17 +96,14 @@ public class Add_Despesa extends Activity {
 
 		updateDisplay();
 
-		/*
-		 * 
-		 * descricao = (EditText)findViewById(R.id.editDescricao); valor =
-		 * (EditText)findViewById(R.id.editValor); status = (RadioGroup)
-		 * findViewById(R.id.statusGroup); data = (EditText)
-		 * findViewById(R.id.date);
-		 * 
-		 * btnSalvar = (Button)findViewById(R.id.SalvarButton);
-		 * btnSalvar.setOnClickListener(new OnClickListener(){ public void
-		 * onClick(View v) { SalvarCadastro(); }});
-		 */
+		  descricao = (EditText)findViewById(R.id.editDescricao); 
+		  valor =(EditText)findViewById(R.id.editValor); 
+		  status = (RadioGroup)findViewById(R.id.statusGroup); 
+		  
+		  btnSalvar = (Button)findViewById(R.id.SalvarButton);
+		  btnSalvar.setOnClickListener(new OnClickListener(){ public void
+		  onClick(View v) { SalvarCadastro(); }});
+		 
 	}
 
 	public void SalvarCadastro() {
@@ -127,7 +123,7 @@ public class Add_Despesa extends Activity {
 
 		Double mDvalor = Double.parseDouble(valor.getText().toString());
 
-		db.InserirDespesa(descricao.getText().toString(), mDvalor, data.getText().toString(), mDstatus);
+		db.InserirDespesa(descricao.getText().toString(), mDvalor, mDateDisplay.getText().toString(), mDstatus);
 		setContentView(R.layout.lista_despesa);
 		CarregarLista(this);
 
@@ -143,7 +139,7 @@ public class Add_Despesa extends Activity {
 		}
 	}
 
-	public void ImprimirLinha(String descricao, String valor, String data,String status) {
+	public void ImprimirLinha(String descricao, String valor, String mDateDisplay,String status) {
 		TextView tv = (TextView) findViewById(R.id.listaDeDespesas);
 
 		if (tv.getText().toString().equalsIgnoreCase("Nada cadastrado."))
@@ -151,7 +147,7 @@ public class Add_Despesa extends Activity {
 
 		tv.setText(tv.getText() + "\r\n" + "Descricao: " + descricao + "\n "
 				+ "Valor: " + valor + "\n" + "Status: " + status + "\n"
-				+ "Data: " + data);
+				+ "Data: " + mDateDisplay);
 	}
 
 	@Override
