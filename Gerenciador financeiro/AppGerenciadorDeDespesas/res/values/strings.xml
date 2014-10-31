@@ -19,6 +19,9 @@
     <string name="cancelar">Cancelar</string>
     <string name="resetar">Resetar</string>
     <string name="salvar"> Salvar </string>
+    <string name="novo"> Novo Cadastro </string>
+     <string name="despesas"> Despesas </string>
+      <string name="receitas"> Receitas </string>
     <string name="action_settings">Settings</string>
 
 

@@ -37,12 +37,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class id {
         public static final int SalvarButton=0x7f090009;
         public static final int SalvarReceita=0x7f090016;
-        public static final int action_settings=0x7f090018;
+        public static final int action_settings=0x7f09001a;
         public static final int barraprogresso=0x7f090001;
         public static final int botaoEntrar=0x7f090000;
+        public static final int btnNovo=0x7f090019;
         public static final int cancelarButton=0x7f09000f;
         public static final int cancelarReceita=0x7f090015;
-        public static final int carregaBanco=0x7f090017;
         public static final int data=0x7f090008;
         public static final int date=0x7f090010;
         public static final int date_picker_button=0x7f090005;
@@ -52,12 +52,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int editValor=0x7f090007;
         public static final int editValorReceita=0x7f090012;
         public static final int fullscreen_content=0x7f090002;
+        public static final int listaDeDespesas=0x7f090018;
         public static final int resetarButton=0x7f09000b;
         public static final int resetarReceita=0x7f090014;
         public static final int status=0x7f09000a;
         public static final int statusGroup=0x7f09000c;
         public static final int statusNaoPaga=0x7f09000e;
         public static final int statusPaga=0x7f09000d;
+        public static final int textView1=0x7f090017;
         public static final int valor=0x7f090006;
         public static final int valorReceita=0x7f090011;
     }
@@ -71,17 +73,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int add__despesa=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060012;
+        public static final int action_settings=0x7f060015;
         public static final int app_name=0x7f060000;
         public static final int cancelar=0x7f06000f;
         public static final int dataString=0x7f060006;
         public static final int descricao=0x7f060003;
         public static final int descricaoString=0x7f060002;
+        public static final int despesas=0x7f060013;
         public static final int entrar=0x7f060001;
         public static final int escolherData=0x7f060008;
         public static final int naoPaga=0x7f06000e;
+        public static final int novo=0x7f060012;
         public static final int paga=0x7f06000d;
         public static final int receitaString=0x7f06000b;
+        public static final int receitas=0x7f060014;
         public static final int resetar=0x7f060010;
         public static final int saldoString=0x7f06000a;
         public static final int salvar=0x7f060011;

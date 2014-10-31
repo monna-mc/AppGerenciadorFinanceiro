@@ -17,10 +17,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		Button button = (Button) findViewById (R.id.botaoEntrar);
-
-		//final View controlsView = findViewById(R.id.fullscreen_content_controls);
-		//final View contentView = findViewById(R.id.fullscreen_content);
-
 			
 		button.setOnClickListener(new OnClickListener(){
 			
