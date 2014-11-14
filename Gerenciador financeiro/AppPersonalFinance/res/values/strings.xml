@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Aplicativo Financeiro</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Olá Mundo!</string>
+    <string name="descricao">Descrição:</string>
+    <string name="valor">Valor:</string>
+    <string name="data">Data:</string>
+    <string name="escolherData">Escolha a data</string>
+    <string name="setData">00/00/0000</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="title_activity_receita">Receitas</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="stringDescricao"> Digite a descrição</string>
+
+</resources>

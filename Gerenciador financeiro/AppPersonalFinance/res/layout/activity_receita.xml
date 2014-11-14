@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#858f6c"
+    android:orientation="vertical"
+    tools:context=".Add_Receita" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    
+     <TextView
+        android:id="@+id/txtDescricao"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/descricao"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  
+    <EditText
+        android:id="@+id/edtRecValor"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtRecValor"
+        android:layout_below="@+id/txtRecValor"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+        <EditText
+            android:id="@+id/edtRecDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/edtRecValor"
+            android:ems="10"
+            android:hint="@string/stringDescricao"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/date_receita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/edtRecValor"
+            android:layout_marginRight="16dp"
+            android:text="@string/escolherData" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/date_receita"
+            android:layout_alignLeft="@+id/date_receita"
+            android:layout_marginLeft="15dp"
+            android:text="@string/data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtRecValor"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edtRecDescricao"
+            android:layout_marginTop="16dp"
+            android:text="@string/valor"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/dateRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/data"
+            android:layout_below="@+id/date_receita"
+            android:text="@string/setData" />
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateRec"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="22dp"
+            android:layout_toLeftOf="@+id/date_receita"
+            android:onClick="btnConfirmar_click"
+            android:text="@string/salvar" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnConfirmar"
+            android:layout_alignBottom="@+id/btnConfirmar"
+            android:layout_alignLeft="@+id/date_receita"
+            android:onClick="btnCancelar_click"
+            android:text="@string/cancelar" />
+       
+</RelativeLayout>
